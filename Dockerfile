@@ -32,7 +32,7 @@ RUN \
   fi
 
 # Expose port
-EXPOSE 3000
+EXPOSE 3999
 
 # Start the application
 CMD ["npm", "start"]

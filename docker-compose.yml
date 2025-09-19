@@ -8,10 +8,10 @@ services:
       dockerfile: Dockerfile
     container_name: bitora-interchain-app
     ports:
-      - "3000:3000"
+      - "3999:3999"
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=3999
       - NEXT_TELEMETRY_DISABLED=1
     restart: unless-stopped
     networks:
