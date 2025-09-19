@@ -17,13 +17,13 @@ export const Header = ({ onOpenSidebar }: HeaderProps) => {
   const { isDesktop, isMobile } = useDetectBreakpoints();
 
   const brandLogo = useColorModeValue(
-    '/logos/brand-logo.svg',
-    '/logos/brand-logo-dark.svg',
+    '/logos/bitora-logo-white.svg',
+    '/logos/bitora-logo-dark.svg',
   );
 
   const brandLogoSm = useColorModeValue(
-    '/logos/brand-logo-sm.svg',
-    '/logos/brand-logo-sm-dark.svg',
+    '/logos/bitora-logo-white.svg',
+    '/logos/bitora-logo-dark.svg',
   );
 
   return (
@@ -37,10 +37,10 @@ export const Header = ({ onOpenSidebar }: HeaderProps) => {
         <Link href="/">
           <Image
             src={isMobile ? brandLogoSm : brandLogo}
-            alt="your logo"
+            alt="Bitora logo"
             width="0"
             height="0"
-            style={{ width: isMobile ? '40px' : '160px', height: 'auto' }}
+            style={{ width: isMobile ? '40px' : '52px', height: 'auto' }}
           />
         </Link>
       )}

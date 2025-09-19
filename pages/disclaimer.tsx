@@ -9,15 +9,15 @@ export default function Disclaimer() {
         The information provided on this website does not constitute investment
         advice, financial advice, trading advice, or any other sort of advice
         and you should not treat any of the website&apos;s content as such.
-        Cosmology does not recommend that any cryptocurrency should be bought,
+        Bitora does not recommend that any cryptocurrency should be bought,
         sold, or held by you. Do conduct your own due diligence and consult your
         financial advisor before making any investment decisions.
       </SectionBody>
       <SectionTitle>Accuracy of Information</SectionTitle>
       <SectionBody>
-        Cosmology will strive to ensure accuracy of information listed on this
+        Bitora will strive to ensure accuracy of information listed on this
         website although it will not hold any responsibility for any missing or
-        wrong information. Cosmology provides all information as is. You
+        wrong information. Bitora provides all information as is. You
         understand that you are using any and all information available here at
         your own risk.
       </SectionBody>
@@ -30,23 +30,17 @@ export default function Disclaimer() {
       </SectionBody>
       <SectionTitle>Tax Compliance</SectionTitle>
       <SectionBody>
-        The users of Cosmology app are solely responsible to determinate what,
+        The users of Bitora app are solely responsible to determinate what,
         if any, taxes apply to their cryptocurrency transactions. The owners of,
-        or contributors to, the Cosmology app are NOT responsible for
+        or contributors to, the Bitora app are NOT responsible for
         determining the taxes that apply to cryptocurrency transactions.
       </SectionBody>
       <SectionTitle>Software Disclaimer</SectionTitle>
       <SectionBody>
-        Cosmology leverages decentralized peer-to-peer blockchains that people
+        Bitora leverages decentralized peer-to-peer blockchains that people
         can use to create liquidity and trade IBC enabled tokens. These
         blockchains are made up of free, public, and open-source software. Your
-        use of Cosmology involves various risks, including, but not limited, to
-        losses while digital assets are being supplied to liquidity pools and
-        losses due to the fluctuation of prices of tokens in a trading pair or
-        liquidity pool, including Impermanence Loss. Before using any pool on
-        these blockchains, you should review the relevant documentation to make
-        sure you understand how they work, and the pool you use on each
-        blockchain works. Additionally, just as you can access email protocols,
+        use of such software and blockchains is at your own risk. Additionally, just as you can access email protocols,
         such as SMTP, through multiple email clients, you can access pools on
         the blockchain through several web or mobile interfaces. You are
         responsible for doing your own diligence on those interfaces to

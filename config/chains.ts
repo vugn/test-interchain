@@ -124,8 +124,8 @@ let assetLists = chainNames.map(
     allAssetLists.find((assetList) => assetList.chainName === chainName)!
 );
 
-chains = [...chains, sepoliaChain, bitoraChain];
-assetLists = [...assetLists, sepoliaAssetList, bitoraAssetList];
+chains = [bitoraChain];
+assetLists = [bitoraAssetList];
 
 console.log("chains", chains);
 console.log("assetLists", assetLists);

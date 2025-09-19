@@ -20,7 +20,7 @@ const queryClient = new QueryClient({
   },
 });
 
-function CreateInterchainApp({ Component, pageProps }: AppProps) {
+function BitoraApp({ Component, pageProps }: AppProps) {
   const { themeClass } = useTheme();
 
   return (
@@ -42,4 +42,4 @@ function CreateInterchainApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default CreateInterchainApp;
+export default BitoraApp;
