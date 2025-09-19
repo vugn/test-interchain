@@ -22,7 +22,7 @@ export const useInstantiateTx = (chainName: string) => {
   const { address } = useChain(chainName);
   const { data: signingClient } = useCustomSigningClient();
   const { mutate: instantiateContract, isLoading } = useInstantiateContract({
-    clientResolver: signingClient,
+    clientResolver: signingClient as any,
     options: {
       context: defaultContext,
     },

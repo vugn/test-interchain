@@ -21,7 +21,7 @@ export const useExecuteContractTx = (chainName: string) => {
   const { address } = useChain(chainName);
   const { data: signingClient } = useCustomSigningClient();
   const { mutate: executeContract, isLoading } = useExecuteContract({
-    clientResolver: signingClient,
+    clientResolver: signingClient as any,
     options: {
       context: defaultContext,
     },
