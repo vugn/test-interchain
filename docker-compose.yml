@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  # Bitora Web Application
+  bitora-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bitora-interchain-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+    networks:
+      - bitora-network
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: bitora-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - bitora-network
+    command: redis-server --appendonly yes
+
+volumes:
+  redis_data:
+    driver: local
+
+networks:
+  bitora-network:
+    driver: bridge
