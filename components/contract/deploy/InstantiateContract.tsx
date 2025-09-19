@@ -61,7 +61,7 @@ export const InstantiateContract = ({
   const { selectedChain } = useChainStore();
   const { address, chain, assetList } = useChain(selectedChain);
   const { instantiateTx } = useInstantiateTx(selectedChain);
-  const { refetch: updateMyContracts } = useMyContracts();
+  const myContracts = useMyContracts();
 
   const handleInstantiate = () => {
     if (!address || !codeInfo) return;
@@ -78,7 +78,6 @@ export const InstantiateContract = ({
       onTxSucceed: (txInfo) => {
         setIsLoading(false);
         setTxResult(txInfo);
-        updateMyContracts();
         onSuccess?.();
       },
       onTxFailed: () => {
