@@ -2,11 +2,11 @@ version: "3.8"
 
 services:
   # Cosvian Web Application
-  Cosvian-interchain:
+  cosvian-interchain:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: Cosvian-interchain-app
+    container_name: cosvian-interchain-app
     ports:
       - "3999:3999"
     environment:
@@ -15,8 +15,8 @@ services:
       - NEXT_TELEMETRY_DISABLED=1
     restart: unless-stopped
     networks:
-      - Cosvian-network
+      - cosvian-network
 
 networks:
-  Cosvian-network:
+  cosvian-network:
     driver: bridge
