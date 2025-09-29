@@ -23,6 +23,9 @@ COPY . .
 # Set environment variables
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+# Ensure Next binds to all interfaces and default port matches compose
+ENV HOSTNAME=0.0.0.0
+ENV PORT=3999
 
 # Build the application
 RUN \
@@ -34,5 +37,5 @@ RUN \
 # Expose port
 EXPOSE 3999
 
-# Start the application
-CMD ["npm", "start"]
+# Start the application (force port and host to avoid bind issues)
+CMD ["sh", "-c", "npx next start -p \"$PORT\" -H \"$HOSTNAME\""]

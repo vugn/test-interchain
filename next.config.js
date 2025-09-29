@@ -6,7 +6,7 @@ module.exports = {
   webpack: (config) => {
     config.module.rules.push({
       test: /\.yaml$/,
-      use: 'yaml-loader',
+      use: "yaml-loader",
     });
 
     return config;
@@ -14,10 +14,13 @@ module.exports = {
   images: {
     remotePatterns: [
       {
-        hostname: 'raw.githubusercontent.com',
+        hostname: "raw.githubusercontent.com",
       },
       {
-        hostname: 'gist.githubusercontent.com',
+        hostname: "gist.githubusercontent.com",
+      },
+      {
+        hostname: "i.postimg.cc",
       },
     ],
   },
