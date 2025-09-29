@@ -22,7 +22,7 @@ export default function Home() {
         fontWeight="500"
         attributes={{ mt: '200px', mb: '20px' }}
       >
-        Bitora Blockchain
+        Cosvian Blockchain
       </Text>
       <Text
         textAlign="center"
@@ -30,7 +30,7 @@ export default function Home() {
         fontWeight="500"
         attributes={{ mb: '20px' }}
       >
-        Welcome to <HighlightText>Bitora</HighlightText> - Your{' '}
+        Welcome to <HighlightText>Cosvian</HighlightText> - Your{' '}
         <HighlightText>Interchain</HighlightText> Gateway
       </Text>
       <ConnectButton />

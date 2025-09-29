@@ -9,15 +9,15 @@ export default function Disclaimer() {
         The information provided on this website does not constitute investment
         advice, financial advice, trading advice, or any other sort of advice
         and you should not treat any of the website&apos;s content as such.
-        Bitora does not recommend that any cryptocurrency should be bought,
+        Cosvian does not recommend that any cryptocurrency should be bought,
         sold, or held by you. Do conduct your own due diligence and consult your
         financial advisor before making any investment decisions.
       </SectionBody>
       <SectionTitle>Accuracy of Information</SectionTitle>
       <SectionBody>
-        Bitora will strive to ensure accuracy of information listed on this
+        Cosvian will strive to ensure accuracy of information listed on this
         website although it will not hold any responsibility for any missing or
-        wrong information. Bitora provides all information as is. You
+        wrong information. Cosvian provides all information as is. You
         understand that you are using any and all information available here at
         your own risk.
       </SectionBody>
@@ -30,14 +30,14 @@ export default function Disclaimer() {
       </SectionBody>
       <SectionTitle>Tax Compliance</SectionTitle>
       <SectionBody>
-        The users of Bitora app are solely responsible to determinate what,
+        The users of Cosvian app are solely responsible to determinate what,
         if any, taxes apply to their cryptocurrency transactions. The owners of,
-        or contributors to, the Bitora app are NOT responsible for
+        or contributors to, the Cosvian app are NOT responsible for
         determining the taxes that apply to cryptocurrency transactions.
       </SectionBody>
       <SectionTitle>Software Disclaimer</SectionTitle>
       <SectionBody>
-        Bitora leverages decentralized peer-to-peer blockchains that people
+        Cosvian leverages decentralized peer-to-peer blockchains that people
         can use to create liquidity and trade IBC enabled tokens. These
         blockchains are made up of free, public, and open-source software. Your
         use of such software and blockchains is at your own risk. Additionally, just as you can access email protocols,

@@ -17,10 +17,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
     >
       <Box maxWidth="1440px" width="$full" mx="$auto" display="flex">
         <Head>
-          <title>Bitora - Interchain Blockchain Platform</title>
+          <title>Cosvian - Interchain Blockchain Platform</title>
           <meta
             name="description"
-            content="Bitora - Your gateway to the Interchain ecosystem"
+            content="Cosvian - Your gateway to the Interchain ecosystem"
           />
           <link rel="icon" href="/images/favicon.ico" />
         </Head>

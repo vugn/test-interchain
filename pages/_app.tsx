@@ -20,7 +20,7 @@ const queryClient = new QueryClient({
   },
 });
 
-function BitoraApp({ Component, pageProps }: AppProps) {
+function CosvianApp({ Component, pageProps }: AppProps) {
   const { themeClass } = useTheme();
 
   return (
@@ -42,4 +42,4 @@ function BitoraApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default BitoraApp;
+export default CosvianApp;

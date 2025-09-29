@@ -16,38 +16,24 @@ const chainNames = [
   // 'ethereum'
 ];
 
-export const SEPOLIA_TESTNET = {
-  chainId: "11155111", // 11155111(0xaa36a7)
-  chainName: "Sepolia",
-  rpcUrls: ["https://1rpc.io/sepolia"],
-  nativeCurrency: {
-    name: "Sepolia ETH",
-    symbol: "ETH",
-    decimals: 18,
-  },
-  blockExplorerUrls: ["https://sepolia.etherscan.io"],
-};
-const sepoliaChain = createChainFromEthereumChainInfo(SEPOLIA_TESTNET);
-const sepoliaAssetList = createAssetListFromEthereumChainInfo(SEPOLIA_TESTNET);
-
-const bitoraChain: Chain = {
+const CosvianChain: Chain = {
   $schema: "../chain.schema.json",
-  chainName: "bitora",
+  chainName: "Cosvian",
   status: "live", // agar wallet mau load meski ini devnet
   networkType: "devnet",
-  website: "https://bitoraprotocol.com",
-  prettyName: "Bitora Protocol",
+  website: "https://cosvian.io",
+  prettyName: "Cosvian Protocol",
   chainType: "cosmos",
-  chainId: "bitora-1",
-  bech32Prefix: "bto",
-  daemonName: "bitorad",
-  nodeHome: ".bitora",
+  chainId: "cosvian-1",
+  bech32Prefix: "csv",
+  daemonName: "Cosviand",
+  nodeHome: ".Cosvian",
   keyAlgos: ["secp256k1"],
   slip44: 118,
   fees: {
     feeTokens: [
       {
-        denom: "ubto",
+        denom: "ucsv",
         fixedMinGasPrice: 0.025,
         lowGasPrice: 0.01,
         averageGasPrice: 0.025,
@@ -56,10 +42,10 @@ const bitoraChain: Chain = {
     ],
   },
   staking: {
-    stakingTokens: [{ denom: "ubto" }],
+    stakingTokens: [{ denom: "ucsv" }],
   },
   codebase: {
-    gitRepo: "https://github.com/BITORAprotocol/bitora-blockchain.git",
+    gitRepo: "https://github.com/cosvian-labs/cosvian.git",
     recommendedVersion: "v1.0.0",
     compatibleVersions: ["v1.0.0"],
     cosmwasmEnabled: true,
@@ -68,49 +54,49 @@ const bitoraChain: Chain = {
   apis: {
     rpc: [
       {
-        address: "http://103.249.236.119:26657",
-        provider: "103.249.236.119",
+        address: "https://rpc.cosvian.io",
+        provider: "cosvian",
       },
     ],
     rest: [
       {
-        address: "http://103.249.236.119:1317",
-        provider: "103.249.236.119",
+        address: "https://api.cosvian.io",
+        provider: "cosvian",
       },
     ],
     grpc: [
       {
-        address: "103.249.236.119:9090",
-        provider: "103.249.236.119",
+        address: "https://grpc.cosvian.io",
+        provider: "cosvian",
       },
     ],
   },
   explorers: [],
   peers: { seeds: [], persistentPeers: [] },
-  description: "Bitora devnet for retail PoS fixed-fee experiments.",
+  description: "Cosvian devnet for retail PoS fixed-fee experiments.",
 };
 
-const bitoraAssetList: AssetList = {
+const CosvianAssetList: AssetList = {
   $schema: "../assetlist.schema.json",
-  chainName: "bitora",
+  chainName: "Cosvian",
   assets: [
     {
-      description: "The native token of the Bitora chain",
+      description: "The native token of the Cosvian chain",
       denomUnits: [
-        { denom: "ubto", exponent: 0 },
-        { denom: "bto", exponent: 6 },
+        { denom: "ucsv", exponent: 0 },
+        { denom: "csv", exponent: 6 },
       ],
       typeAsset: "sdk.coin",
-      base: "ubto",
-      name: "Bitora",
-      display: "bto",
-      symbol: "BTO",
+      base: "ucsv",
+      name: "Cosvian",
+      display: "csv",
+      symbol: "CSV",
       logoURIs: {
-        png: "https://bitoraprotocol.com/logo/vectorlogo.svg",
-        svg: "https://bitoraprotocol.com/logo/vectorlogo.svg",
+        png: "https://i.postimg.cc/Kk7f2fQ9/logo-png.png",
+        svg: "https://i.postimg.cc/Kk7f2fQ9/logo-png.png",
       },
       keywords: ["payments", "pos"],
-      socials: { website: "https://bitoraprotocol.com" },
+      socials: { website: "https://cosvian.io" },
     },
   ],
 };
@@ -124,8 +110,8 @@ let assetLists = chainNames.map(
     allAssetLists.find((assetList) => assetList.chainName === chainName)!
 );
 
-chains = [bitoraChain];
-assetLists = [bitoraAssetList];
+chains = [CosvianChain];
+assetLists = [CosvianAssetList];
 
 console.log("chains", chains);
 console.log("assetLists", assetLists);

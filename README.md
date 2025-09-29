@@ -1,6 +1,6 @@
-This is the Bitora Interchain App - a ## Credits
+This is the Cosvian Interchain App - a ## Credits
 
-🛠 Built by Bitora — Your gateway to the Interchain ecosystemckchain platform built for the Interchain ecosystem.
+🛠 Built by Cosvian — Your gateway to the Interchain ecosystemckchain platform built for the Interchain ecosystem.
 
 ## Getting Started
 
@@ -22,9 +22,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 4. Open http://localhost:3000, select "Osmosis Devnet" or "Cosmos Hub Devnet" from the chain dropdown in the top right corner then click "Connect Wallet" in the left sidebar to connect to the chain
 5. Go to "Faucet" to get some test tokens and enjoy!
 
-## Bitora Features
+## Cosvian Features
 
-Bitora provides a comprehensive platform for interacting with the Interchain ecosystem ⚛️
+Cosvian provides a comprehensive platform for interacting with the Interchain ecosystem ⚛️
 
 | Category                       | Tools                                                                                                                                                                                                     | Description                                                                                                         |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |

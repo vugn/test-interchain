@@ -16,8 +16,8 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   const { isDesktop } = useDetectBreakpoints();
 
   const brandLogoSrc = useColorModeValue(
-    '/logos/bitora-logo-white.svg',
-    '/logos/bitora-logo-dark.svg',
+    '/logos/Cosvian-logo-white.svg',
+    '/logos/Cosvian-logo-dark.svg',
   );
 
   const desktopSidebar = (
@@ -41,7 +41,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
       <Link href="/" style={{ marginBottom: '40px' }}>
         <Image
           src={brandLogoSrc}
-          alt="Bitora logo"
+          alt="Cosvian logo"
           width="0"
           height="0"
           style={{ width: '52px', height: 'auto' }}

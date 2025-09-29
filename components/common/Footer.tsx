@@ -21,7 +21,7 @@ export const Footer = () => {
         gap="4px"
       >
         <Text color="$blackAlpha500" fontSize="12px" fontWeight="500">
-          © {new Date().getFullYear()} Bitora
+          © {new Date().getFullYear()} Cosvian
         </Text>
         {isMobile ? <TextDivider /> : <SocialLinks />}
         <Link href="/disclaimer">
@@ -45,11 +45,11 @@ const TextDivider = () => {
 const socialLinks = [
   {
     icon: <Icon name="github" color="$blackAlpha600" />,
-    href: 'https://github.com/bitora-blockchain',
+    href: 'https://github.com/Cosvian-blockchain',
   },
   {
     icon: <Icon name="discord" color="$blackAlpha600" />,
-    href: 'https://discord.gg/bitora',
+    href: 'https://discord.gg/Cosvian',
   },
   {
     icon: (
@@ -57,11 +57,11 @@ const socialLinks = [
         <FaXTwitter size="16px" />
       </Box>
     ),
-    href: 'https://x.com/bitora_official',
+    href: 'https://x.com/Cosvian_official',
   },
   {
     icon: <Icon name="youtube" color="$blackAlpha600" />,
-    href: 'https://www.youtube.com/@bitora',
+    href: 'https://www.youtube.com/@Cosvian',
   },
 ];
 

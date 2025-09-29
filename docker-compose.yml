@@ -1,12 +1,12 @@
 version: "3.8"
 
 services:
-  # Bitora Web Application
-  bitora-interchain:
+  # Cosvian Web Application
+  Cosvian-interchain:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: bitora-interchain-app
+    container_name: Cosvian-interchain-app
     ports:
       - "3999:3999"
     environment:
@@ -15,8 +15,8 @@ services:
       - NEXT_TELEMETRY_DISABLED=1
     restart: unless-stopped
     networks:
-      - bitora-network
+      - Cosvian-network
 
 networks:
-  bitora-network:
+  Cosvian-network:
     driver: bridge
