@@ -17,13 +17,13 @@ export const Header = ({ onOpenSidebar }: HeaderProps) => {
   const { isDesktop, isMobile } = useDetectBreakpoints();
 
   const brandLogo = useColorModeValue(
-    '/logos/Cosvian-logo-white.svg',
-    '/logos/Cosvian-logo-dark.svg',
+    '/logos/logo-svg.svg',
+    '/logos/logo-svg.svg',
   );
 
   const brandLogoSm = useColorModeValue(
-    '/logos/Cosvian-logo-white.svg',
-    '/logos/Cosvian-logo-dark.svg',
+    '/logos/logo-svg.svg',
+    '/logos/logo-svg.svg',
   );
 
   return (

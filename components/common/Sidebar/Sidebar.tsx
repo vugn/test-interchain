@@ -16,8 +16,8 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   const { isDesktop } = useDetectBreakpoints();
 
   const brandLogoSrc = useColorModeValue(
-    '/logos/Cosvian-logo-white.svg',
-    '/logos/Cosvian-logo-dark.svg',
+    '/logos/logo-svg.svg',
+    '/logos/logo-svg.svg',
   );
 
   const desktopSidebar = (
